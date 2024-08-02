@@ -10,4 +10,3 @@ carry_on:
 
 minus_number:
 	mov r5, #1
-	bx lr
