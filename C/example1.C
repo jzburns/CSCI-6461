@@ -8,6 +8,7 @@ int main (int argc, char** argv) {
 	uint32_t x = 1;
 	int32_t y = -1;
 
+	// how do we fix this?
 	if (x > y) {
 		printf("correct!\n");
 	} else {
