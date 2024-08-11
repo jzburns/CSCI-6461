@@ -6,6 +6,9 @@ In this code, we notice an unusual result of an ``if`` test. It
 appears that 1 is not greater than -1:
 
 ```
+        uint32_t x = 1;
+        int32_t y = -1;
+
         // how do we fix this?
         if (x > y) {
                 printf("correct!\n");
