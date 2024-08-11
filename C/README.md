@@ -9,7 +9,9 @@ appears that 1 is not greater than -1:
         // how do we fix this?
         if (x > y) {
                 printf("correct!\n");
-        } 
+        } else {
+                printf("something is wrong!\n");
+        }
 ```
 
 
