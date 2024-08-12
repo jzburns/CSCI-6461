@@ -20,9 +20,11 @@ The problem can be undersood clearly if we think about the assembly code produce
 
 ```
 mov r0, #1
-mov r1, #-1
-cmp r0. r1
-bls else
+mov r1, #-5 ; this will be disassembled as mvn r1, #4
+cmp r0. r1; Compare (immediate) subtracts RHS from LHS.
+          ; It updates the condition flags based on the result, and discards the result.
+bls else ; branch on unsigned less than or same
+         ; The processor doesn't read data declarations, so it doesn't see the minus sign. 
 
 else:
 ```
