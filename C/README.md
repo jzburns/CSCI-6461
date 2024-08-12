@@ -16,6 +16,15 @@ appears that 1 is not greater than -1:
                 printf("something is wrong!\n");
         }
 ```
+The problem can be undersood clearly if we think about the assembly code produced:
 
+```
+mov r0, #1
+mov r1, #-1
+cmp r0. r1
+bls else
+
+else:
+```
 
 
