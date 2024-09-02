@@ -15,7 +15,7 @@ loop:
 	b loop
 
 done:
-	cmp r5, #4
+	svc #0 	// stop here
 	
 .data
 	vector: .word 0,1,2,3
