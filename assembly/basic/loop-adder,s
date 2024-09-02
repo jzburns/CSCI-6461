@@ -1,0 +1,21 @@
+.global _start
+_start:
+	mov r0, #0		// incrementer
+	ldr r1, =vector	// base of our vector
+	mov r2, #0 		// offset
+	mov r3, #0 		// the accumulator
+
+loop:
+	cmp r0, #4
+	bge done
+	ldr r2, [r1, r2]
+	add r3, r3, r2
+	add r0, r0, #1
+	lsl r2, r0, #2 	// calc offset
+	b loop
+
+done:
+	cmp r5, #4
+	
+.data
+	vector: .word 0,1,2,3
