@@ -7,5 +7,7 @@ _start:
 	mov r8, #-5
 	mov r9, #7
 	
-	addeq r4, r5, #78
-	andhs r7, r8, r9
+	addeq r4, r5, #78	// Z=0
+	andhs r7, r8, r9	// C=1
+	orrmi r10, r11, r12	// N=0
+	eorl2, r12, r7, r10	// N=0, V=1
