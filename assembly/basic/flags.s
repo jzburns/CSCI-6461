@@ -1,7 +1,7 @@
 .global _start
 _start:
-	mov r2, #0x80000000
-	mov r3, #0x00000001
+	mov r4, #0x80000000
+	mov r5, #0x00000001
 	mov r11, #2
 	mov r7, #0
 	mov r8, #-5
