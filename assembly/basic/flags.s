@@ -7,6 +7,7 @@ _start:
 	mov r9, #7
 	mov r11, #2
 	
+ 	cmp r2, r3	// this operation will change the status flags
 	addeq r4, r5, #78	// Z=0
 	andhs r7, r8, r9	// C=1
 	orrmi r10, r11, r12	// N=0
