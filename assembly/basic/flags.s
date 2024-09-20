@@ -10,4 +10,4 @@ _start:
 	addeq r4, r5, #78	// Z=0
 	andhs r7, r8, r9	// C=1
 	orrmi r10, r11, r12	// N=0
-	eorl2, r12, r7, r10	// N=0, V=1
+	eorlt r12, r7, r10	// N=0, V=1
