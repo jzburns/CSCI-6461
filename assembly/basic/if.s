@@ -4,13 +4,13 @@ _start:
 	mov r1, #8
 	
 	cmp r1, r0
-	blt minus_number
+	blt negative
 	b finalize
 
 carry_on:
 	mov r1, #8
  
-minus_number:
+negative:
 	mov r5, #1
 	svc 2
 	
