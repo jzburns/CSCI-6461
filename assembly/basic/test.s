@@ -8,13 +8,13 @@ _start:
 	cmp r0, r2
 	beq same
 	cmp r1, r3
-	blt less-than
+	blt less_than
 	
 same:
 	ldr r2, =9
 	ldr r3, =9
  
-less-than:
+less_than:
 	mov r5, #1
 	svc 2
 	
