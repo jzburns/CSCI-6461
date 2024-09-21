@@ -13,7 +13,6 @@ _start:
 same:
 	ldr r2, =9
 	ldr r3, =9
-	svc 2
  
 negative:
 	mov r5, #1
