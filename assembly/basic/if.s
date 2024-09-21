@@ -5,10 +5,9 @@ _start:
 	
 	cmp r1, r0
 	blt negative
-	b finalize
-
-carry_on:
 	mov r1, #8
+	add r2, r1, r0
+	b finalize
  
 negative:
 	mov r5, #1
