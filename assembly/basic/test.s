@@ -1,22 +1,34 @@
 .global _start
 _start:
-	mov r0, #5
-	mov r1, #8
-	ldr r2, =5
-	ldr r3, =9
+
+step0:
+	mov r0, #2
+	mov r1, #10
 	
-	cmp r0, r2
-	beq same
-	cmp r1, r3
-	blt less_than
+step1:	
+	cmp r0, r1
+	beq step10
+	add r0, #2
 	
-same:
-	ldr r2, =9
-	ldr r3, =9
- 
-less_than:
-	mov r5, #1
-	svc 2
+step2:	
+	cmp r0, r1
+	beq step10
+	add r0, #2
 	
-finalize:
+step3:	
+	cmp r0, r1
+	beq step10
+	add r0, #2
+	
+step4:	
+	cmp r0, r1
+	beq step10
+	add r0, #2
+
+step5:	
+	cmp r0, r1
+	beq step10
+	add r0, #2
+	
+step10:
 	svc 2
